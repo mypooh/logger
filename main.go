@@ -8,7 +8,9 @@ import (
 )
 
 type customLogWriter struct {
-	fileWriter    *os.File
+	// this is file to write log
+	fileWriter *os.File
+	// this is std
 	consoleWriter *os.File
 }
 
